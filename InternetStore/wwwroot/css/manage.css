@@ -1,0 +1,42 @@
+﻿.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.button{
+    color: #ffffff;
+    background-color: #9CCB84; 
+}
+.button:hover{
+    color: #ffffff;
+    background-color: #70925E; 
+}
+.button-delete{
+    color: #ffffff;
+    background-color: #FF0000; 
+}
+.button-delete:hover{
+    color: #ffffff;
+    background-color: #870000; 
+}
+table {
+        border-collapse: collapse;
+        border-radius: 10px;
+    }
+
+    th, td {
+        padding: 10px 15px;
+        color: white;
+    }
+
+    thead th {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    tbody th,
+    tbody td {
+        border: none;
+        font-weight: lighter;
+        text-align: center;
+    }

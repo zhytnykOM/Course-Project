@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+<link rel="stylesheet" href="/css/input.css">
+@model ModelRegister
+<div class="block">
+    <h1>Реєстрація</h1>
+    <form asp-controller="Account" asp-action="Register" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <input asp-for="Name" class="form-control session-input" placeholder="Ім`я" />
+            <span class="span" asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="UserName" class="form-control session-input" placeholder="Логін" />
+            <span class="span" asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Email" class="form-control session-input" placeholder="Пошта" />
+            <span class="span" asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="PhoneNumber" class="form-control session-input" placeholder="Мобільний номер телефону" />
+            <span class="span" asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Password" class="form-control session-input" placeholder="Пароль" />
+            <span class="span" asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="ConfirmPassword" class="form-control session-input" placeholder="Підтвердіть пароль" />
+            <span class="span" asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary submit-button">Зареєструватись</button>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+<link rel="stylesheet" href="/css/input.css">
+@model ModelLogin
+<div class="block">
+    <h1>Вхід в особистий кабінет</h1>
+    <form asp-controller="Account" asp-action="Login" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <input asp-for="UserName" class="form-control session-input" placeholder="Логін" />
+            <span class="span" asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Password" class="form-control session-input" placeholder="Пароль" />
+            <span class="span" asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" asp-for="RememberMe" id="rememberMeCheckbox" />
+            <label class="form-check-label" for="rememberMeCheckbox">
+                @Html.DisplayNameFor(m => m.RememberMe)
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary submit-button">Ввійти</button>
+    </form>
+</div>

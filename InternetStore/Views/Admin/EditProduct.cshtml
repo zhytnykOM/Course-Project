@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Edit Page";
+}
+@model InternetStore.Models.Product
+<link rel="stylesheet" href="/css/use.css">
+<div class="block">
+    <form asp-controller="Admin" asp-action="EditProduct" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger" placeholder="Назва"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Price" class="form-control" placeholder="Ціна" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="submit">
+            <input hidden asp-for="Id" value="@Model.Id" />
+            <button type="submit" class="btn btn-primary">Зберегти</button>
+            <a class="text-button" asp-controller="Admin" asp-action="ManageProducts">Повернутися</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Manage Page";
+}
+@model List<User>
+<link rel="stylesheet" asp-append-version="true" href="/css/shared-styles.css">
+<link rel="stylesheet" href="/css/manage.css">
+<div class="container">
+    <div class="block">
+        <h2>Меню</h2>
+        <div class="nav-links">
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Account" asp-action="Profile">Профіль</a>
+            </div>
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Account" asp-action="ChangePassword">Змінити пароль</a>
+            </div>
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Account" asp-action="History">Покупки</a>
+            </div>
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Admin" asp-action="ManageAccounts">Адмін панель</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="block">
+            <div class="row">
+                <div class="nav-link">
+                    <a class="btn button" asp-controller="Admin" asp-action="ManageAccounts">Керування аккаунтами</a>
+                    <a class="btn button" asp-controller="Admin" asp-action="ManageProducts">Керування продуктами</a>
+                </div>
+            </div>
+            <h2>Список користувачів</h2>
+            <form asp-controller="Admin" asp-action="AddAccount" method="get">
+                <button class="btn button" type="submit">Додати користувача</button>
+            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ім`я</th>
+                        <th>Логін</th>
+                        <th>Роль</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int i = 0;
+                        foreach (var user in Model)
+                        {
+                            i++;
+                            <tr>
+                                <th>@user.Name</th>
+                                <th>@user.UserName</th>
+                                <th>@user.Role</th>
+                                <th>
+                                    <div class="buttons">
+                                        <form asp-controller="Admin" asp-action="EditAccount" method="get">
+                                            <input type="hidden" name="id" value="@user.Id" />
+                                            <button class="btn button" class="button" type="submit">Редагувати</button>
+                                        </form>
+                                        <form asp-controller="Admin" asp-action="DeleteAccount" method="post">
+                                            <input type="hidden" name="id" value="@user.Id" />
+                                            <button class="btn button-delete" type="submit">Видалити</button>
+                                        </form>
+                                    </div>
+                                </th>
+                            </tr>
+                        }
+                        if (i == 0)
+                        {
+                            <tr><th>Не знайдено</th><th></th><th></th><th></th></tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

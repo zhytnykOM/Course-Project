@@ -1,0 +1,40 @@
+﻿.block {
+    background-color: #799F66;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    height: fit-content;
+}
+.block .btn-primary{
+    border: none;
+    color: #ffffff;
+    background-color: #FF0000; 
+}
+.block .btn-primary:hover{
+    border: none;
+    color: #ffffff;
+    background-color: #870000; 
+}
+.block .text-button{
+    color: #838383;
+}
+.block .text-button:hover{
+    color: #ffffff;
+}
+.block .form-group {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.block .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #70925E;
+    border-radius: 4px;
+    background-color: #9CCB84;
+    color: #ffffff;
+}
+.block select option {
+    background-color: #333;
+    color: white;
+}

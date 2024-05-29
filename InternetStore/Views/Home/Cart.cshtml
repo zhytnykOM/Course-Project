@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+}
+@model List<ModelOrder>
+
+<link rel="stylesheet" href="/css/cart.css">
+<div class="block">
+@{
+    if (Model.Count != 0)
+    {
+            <h1>Кошик</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Назва</th>
+                    <th>Ціна за 1 шт</th>
+                    <th>Кількість</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var product in Model)
+                {
+                    <tr>
+                        <th>@product.Name</th>
+                        <th>@product.Price</th>
+                        <th>@product.Count</th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <form asp-controller="Home" asp-action="Cart" method="post">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <input type="hidden" name="orders[@i].Id" value="@Model[i].Id" />
+                <input type="hidden" name="orders[@i].Name" value="@Model[i].Name" />
+                <input type="hidden" name="orders[@i].Price" value="@Model[i].Price" />
+                <input type="hidden" name="orders[@i].Count" value="@Model[i].Count" />
+            }
+            <button class="btn" type="submit">Купити</button>
+        </form>
+        
+    }
+    else
+    {
+        <h1>Кошик пустий!</h1>
+    }
+}
+</div>

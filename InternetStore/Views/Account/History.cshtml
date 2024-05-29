@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using InternetStore.Data
+@using InternetStore.Enums
+@inject ApplicationDbContext _context
+@inject UserManager<User> UserManager
+@{
+    ViewData["Title"] = "Purchased products";
+}
+<link rel="stylesheet" href="/css/history.css">
+<link rel="stylesheet" asp-append-version="true" href="/css/shared-styles.css">
+@model List<ModelProduct>
+<div class="container">
+    <div id="menu" class="block">
+        <h2>Меню</h2>
+        <div class="nav-links">
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Account" asp-action="Profile">Профіль</a>
+            </div>
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Account" asp-action="ChangePassword">Змінити пароль</a>
+            </div>
+            <div class="nav-link">
+                <a class="btn button-style" asp-controller="Account" asp-action="History">Покупки</a>
+            </div>
+            @{
+                var user = await UserManager.GetUserAsync(User);
+                if (user.Role == UserRole.Admin)
+                {
+                    <div class="nav-link">
+                        <a class="btn button-style" asp-controller="Admin" asp-action="ManageAccounts">Адмін панель</a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div class="col">
+        <div class="box">
+            <div id="package">
+                <h2>Історія покупок</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Назва</th>
+                            <th>Кількість</th>
+                            <th>Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            if (Model != null)
+                            {
+                                foreach (var product in Model)
+                                {
+                                    double price = product.Price * product.Count;
+                                    <tr>
+                                        <th>@product.Name</th>
+                                        <th>@product.Count</th>
+                                        <th>@price</th>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr><th>Не знайдено</th><th></th><th></th></tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

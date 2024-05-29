@@ -1,0 +1,22 @@
+﻿
+table {
+        border-collapse: collapse;
+        border-radius: 10px;
+    }
+
+    th, td {
+        padding: 10px 15px;
+        color: white;
+    }
+
+    thead th {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    tbody th,
+    tbody td {
+        border: none;
+        font-weight: lighter;
+        text-align: center;
+    }

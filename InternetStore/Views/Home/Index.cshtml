@@ -1,0 +1,80 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="/css/index.css">
+@if (!string.IsNullOrEmpty(TempData["UserNotification"] as string))
+{
+    <div class="alert alert-success" id="alert" role="alert">
+        @TempData["UserNotification"]
+    </div>
+}
+<div class="container">
+    <h1>Продукти</h1>
+    <h2>В наявності</h2>
+    <div class="products">
+        @foreach (var product in Model.OrderBy(n => n.Name))
+        {
+            <div class="block">
+                <img src="@product.Image" alt="@product.Name" width="100" />
+                <div class="film-details">
+                    <h2><strong>@product.Name</strong></h2>
+                    <p>Ціна - @product.Price₴</p>
+                </div>
+                <button class="btn add-to-cart" data-id="@product.Id">Додати до кошика</button>
+            </div>
+        }
+    </div>
+</div>
+<style>
+    .alert {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        opacity: 1;
+        transition: opacity 1s ease-out;
+    }
+
+    .alert-success {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".add-to-cart").click(function () {
+            var productId = $(this).data('id');
+            $.ajax({
+                url: '@Url.Action("AddToCart", "Home")',
+                type: 'POST',
+                data: { id: productId },
+                headers: {
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function (response) {
+                    alert("Товар додано до кошика!");
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr.responseText);
+                    alert("Виникла помилка при додаванні товару до кошика.");
+                }
+            });
+        });
+    });
+    setTimeout(function () {
+        var alertElement = document.getElementById("alert");
+        if (alertElement) {
+            alertElement.style.opacity = "0";
+            setTimeout(function () {
+                alertElement.style.display = "none";
+            }, 1000);
+        }
+    }, 2000);
+</script>

@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shkverz\\source\\project\\InternetStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modelregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modelregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modelproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modelproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modelorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modelorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modellogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modellogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modelchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modelchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|c:\\users\\shkverz\\source\\project\\internetstore\\internetstore\\models\\modelaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F62B473-ADC6-460B-877E-A9A735907656}|InternetStore\\InternetStore.csproj|solutionrelative:internetstore\\models\\modelaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\User.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\User.cs",
+              "RelativeToolTip": "InternetStore\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:38.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\Product.cs",
+              "RelativeToolTip": "InternetStore\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:38.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelRegister.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelRegister.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelRegister.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelRegister.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelRegister.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:37.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModelProfile.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelProfile.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelProfile.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelProfile.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:37.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModelProduct.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelProduct.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelProduct.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelProduct.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:36.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModelOrder.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelOrder.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelOrder.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelOrder.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:35.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModelLogin.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelLogin.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelLogin.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelLogin.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:35.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModelChangePassword.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelChangePassword.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelChangePassword.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelChangePassword.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelChangePassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:34.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModelAccount.cs",
+              "DocumentMoniker": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelAccount.cs",
+              "RelativeDocumentMoniker": "InternetStore\\Models\\ModelAccount.cs",
+              "ToolTip": "C:\\Users\\shkverz\\source\\project\\InternetStore\\InternetStore\\Models\\ModelAccount.cs",
+              "RelativeToolTip": "InternetStore\\Models\\ModelAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T16:17:33.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 143,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

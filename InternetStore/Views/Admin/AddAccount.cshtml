@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Add Page";
+}
+@using InternetStore.Enums
+@model InternetStore.Models.ModelAccount
+<link rel="stylesheet" href="/css/use.css">
+<div class="block">
+    <form asp-controller="Admin" asp-action="AddAccount" method="post">
+        <div class="form-group">
+            <input asp-for="Name" class="form-control" placeholder="Ім`я"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="UserName" class="form-control" placeholder="Логін"></input>
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Email" class="form-control" placeholder="Пошта"></input>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="PhoneNumber" class="form-control" placeholder="Номер телефону"></input>
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <select asp-for="Role" class="form-control">
+                @foreach (UserRole role in Enum.GetValues(typeof(UserRole)))
+                {
+                    <option value="@role">@role</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <input asp-for="Password" class="form-control" placeholder="Пароль" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="submit">
+            <button type="submit" class="btn btn-primary">Створити</button>
+            <a class="text-button" asp-controller="Admin" asp-action="ManageAccounts">Повернутися</a>
+        </div>
+    </form>
+</div>
